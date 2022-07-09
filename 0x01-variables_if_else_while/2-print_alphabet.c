@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-main(void)
+int main(void)
 {
 	char ch ='a';
 	while (ch <= 'z')
@@ -13,5 +13,6 @@ main(void)
 		putchar(ch);
 		ch++;
 	}
+	putchar("\n");
 	return 0;
 }
