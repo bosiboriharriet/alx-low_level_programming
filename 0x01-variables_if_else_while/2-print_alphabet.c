@@ -5,8 +5,9 @@
  *
  * Return: Always 0 (Success)
  */
-main()
+int main(void)
 {
+	int num;
 	char ch ='a';
 	while (ch <= 'z')
 	{
@@ -14,5 +15,5 @@ main()
 		ch++;
 	}
 	putchar('\n');
-	return ch;
+	return 0;
 }
