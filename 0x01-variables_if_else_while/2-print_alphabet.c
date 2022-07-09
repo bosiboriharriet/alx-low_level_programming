@@ -9,7 +9,7 @@ int main(void)
 {
 	int num = 1;
 	char ch ='a';
-	while (ch <= 'z', num <= 26)
+	while (ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
