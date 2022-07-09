@@ -8,7 +8,8 @@
 int main(void)
 {
 	int num = 1;
-	char ch ='a';
+	char ch = 'a';
+
 	while (ch <= 'z')
 	{
 		putchar(ch);
@@ -16,5 +17,5 @@ int main(void)
 		num++;
 	}
 	putchar('\n');
-	return 0;
+	return (0);
 }
