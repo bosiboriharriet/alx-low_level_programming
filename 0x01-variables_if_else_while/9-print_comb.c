@@ -13,10 +13,10 @@ int main(void)
 
 	while (i <= 9)
 	{
+		putchar(',');
 		putchar((i % 10) + '1');
 		i++;
 		putchar(' ');
-		putchar(',');
 	}
 	return (0);
 }
