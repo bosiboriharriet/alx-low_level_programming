@@ -14,11 +14,11 @@ int main(void)
 		putchar(num);
 		num++;
 	}
-	int lett = 'a';
-	while (lett <= 'f')
+	int num = 'a';
+	while (num <= 'f')
 	{
 		putchar(lett);
-		lett++
+		num++;
 	}
 	putchar('\n');
 	return (0);
