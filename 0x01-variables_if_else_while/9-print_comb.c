@@ -17,5 +17,6 @@ int main(void)
 		i++;
 	}
 	putchar('9');
+	putchar(' ');
 	return (0);
 }
