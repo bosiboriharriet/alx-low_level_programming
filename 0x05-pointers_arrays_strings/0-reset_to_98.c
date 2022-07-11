@@ -5,7 +5,7 @@
  */
 void reset_to_98(int *n)
 {
-	swap(&n)
+	*n = 98;
 
 	return (*n);
 }
