@@ -3,40 +3,19 @@
 #include <time.h>
 
 /**
- * main - random password generator for 101-crackme
- *
- * Return: always 0
+ * _strlen - calculates the length of a string.
+ * @s: pointer to the character array.
+ * Return: length of the string
  */
-int main(void)
+int _strlen(char *s)
 {
-	int i, j, k, s;
-	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char p[58];
+	int i;
 
-	srand(time(NULL));
-	while (s != 2772)
+	i = 0;
+	while (*s != '\0')
 	{
-		i = k = s = 0;
-		while ((2772 - 122) > s)
-		{
-			j = rand() % 62;
-			p[i] = c[j];
-			s += c[j];
-			i++;
-		}
-		while (c[k])
-		{
-			if (c[k] == (2772 - s))
-			{
-				p[i] = c[k];
-				s += c[k];
-				i++;
-				break;
-			}
-			k++;
-		}
+		i++;
+		s++;
 	}
-	p[i] = '\0';
-	printf("%s", p);
-	return (0);
+	return (i);
 }
