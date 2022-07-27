@@ -1,26 +1,14 @@
 #include "main.h"
+
 /**
- * _strstr - Entry point
- * @haystack: input
- * @needle: input
- * Return: Always 0 (Success)
+ * _abs - return abs value
+ * @n : number to check
+ * Return:0 or 1
  */
-char *_strstr(char *haystack, char *needle)
+
+int _abs(int n)
 {
-	for (; *haystack != '\0'; haystack++)
-	{
-		char *l = haystack;
-		char *p = needle;
 
-		while (*l == *p && *p != '\0')
-		{
-			l++;
-			p++;
-		}
+return (n >= 0 ? n : n * -1);
 
-		if (*p == '\0')
-			return (haystack);
-	}
-
-	return (0);
 }
