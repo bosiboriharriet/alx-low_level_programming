@@ -1,3 +1,3 @@
 #include "main.h"
-int = 0;
+int c = 0;
 
